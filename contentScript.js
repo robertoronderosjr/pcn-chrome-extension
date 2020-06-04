@@ -36,7 +36,7 @@ $(document).ready(function () {
 
     var elms = $.map($("th[data-label='Name']"), function (el, i) {
         var text = el.innerText;
-        var splitText = text.split(" ")
+        var splitText = text.split(" (")
         var username = splitText[0]
         usernames.push(username);
     });
